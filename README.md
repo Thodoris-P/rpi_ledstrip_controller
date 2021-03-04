@@ -1,0 +1,1 @@
+This is a project written for a raspberry pi that controls a rgb led strip through a web interface. It is a simple web app with a simple python server, intended for local network usage.
