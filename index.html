@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Yeelight Controller</title>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+    <meta name='viewport' content='width=device-width, initial-scale=1'/>
+    <link rel="stylesheet" type="text/css" href="/style.css">
+    <script src="slider.js"></script>
+    <script src="color_picker.js"></script>
+    <script src="toggle.js"></script>
+</head>
+
+<body>
+    <div class="header-div">
+        <h1>Pick LED Color</h1>
+        
+        <label class="switch">
+            <input id="cb-toggle" type="checkbox" onclick="toggle(this)">
+            <span class="toggle round"></span>
+        </label>
+    </div>
+    
+    <div class="canvas-div">
+        <canvas id="colorCanvas" class="color-canvas" width="250" height="250"></canvas>
+    </div>
+
+    <div style="text-align: center; padding-top: 3%;">
+        <h1>Brightness</h1>
+    </div>
+
+    <div class="slidecontainer">
+        <input type="range" name="submit" min="1" max="100" value="50" class="slider" id="brightness" onchange="getSliderValue()">
+    </div>
+    
+    <script>
+        initColorPicker();
+    </script>
+    
+</body>
+</html>
