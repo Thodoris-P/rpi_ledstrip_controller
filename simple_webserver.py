@@ -7,11 +7,11 @@ import json
 import colorsys
 
 #host settings
-host_name = '192.168.2.5'
+host_name = '192.168.2.18'
 host_port = 80
 #rgb pins
 red = 22
-blue = 27
+blue = 24
 green = 23
 #file where rgb data is saved
 rgb_data_file = 'data.json'
